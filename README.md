@@ -15,15 +15,17 @@ To run the project locally, follow these steps:
 
 Clone the Repository: Use Git to clone the project repository to your local machine.
 
-git clone https://github.com/2100031103/Fasal.git
-cd MovieSearch
+## git clone https://github.com/2100031103/Fasal.git
+## cd MovieSearch
 
 Open index.html: Open the index.html file in your preferred web browser to launch the application.
 Static Login Credentials
 To access the application, use the following static credentials:
 
-Username: cherry
-Password: cherry@123
+#### Username: cherry
+#### Password: cherry@123
+
+
 These credentials are provided for demonstration purposes to showcase the login functionality.
 
 Features
@@ -38,11 +40,17 @@ The application will display a list of movies that match the search query, each 
 Example
 Open index.html in your web browser.
 Log in using:
-Username: cherry
-Password: cherry@123
+
+### Username: cherry
+### Password: cherry@123
+
+
 Enter a movie name in the search form and click the search button.
 The search results will be displayed as cards, each containing the movie's image, title, awards, rating, director and actor names, and summary.
 
 This README file provides a clear and structured overview of the project, making it easy for users and developers to understand and run the application.
+
+
+
 
 You can check this on Netlify : https://spiffy-tanuki-2d3647.netlify.app/
