@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --dark-color: #151111;
+    --light-dark-color: #242424;
+    --yellow-color: #a36767;
+    --white-color: #dee7e1;
+    --gray-color: #578095;
+     
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-container,
+.content-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--light-dark-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(171, 81, 81, 0.5);
+    transition: all 0.3s ease;
+}
+
+.login-container h2,
+.content-container h3 {
+    color: var(--yellow-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    color: var(--gray-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--yellow-color);
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--yellow-color);
+    color: var(--dark-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darken(var(--yellow-color), 10%);
+}
+
+.logout-container {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--light-dark-color);
+    text-align: center;
+}
+
+.logo p {
+    font-size: 2rem;
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+
+.logo p span {
+    color: var(--white-color);
+}
+
+.search-container {
+    background-color: var(--light-dark-color);
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.search-element {
+    position: relative;
+}
+
+.search-element h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.search-element .form-control {
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--gray-color);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.search-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--light-dark-color);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.search-list .search-list-item {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--dark-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.search-list .search-list-item:hover {
+    background-color: var(--yellow-color);
+    color: var(--dark-color);
+}
+
+.search-item-thumbnail img {
+    width: 40px;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+.search-item-info h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.search-item-info p {
+    font-size: 0.8rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.search-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.search-list::-webkit-scrollbar-thumb {
+    background-color: var(--yellow-color);
+    border-radius: 5px;
+}
+
+.hide-search-list {
+    display: none;
+}
+
+.result-container {
+    padding: 2rem 0;
+}
+
+.movie-poster img {
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.movie-info {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.movie-title {
+    font-size: 2rem;
+    color: var(--yellow-color);
+    margin-bottom: 1rem;
+}
+
+.movie-misc-info {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.movie-misc-info li {
+    background-color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: var(--dark-color);
+}
+
+.genre,
+.writer,
+.actors,
+.plot,
+.language,
+.awards {
+    margin: 0.5rem 0;
+}
+
+.genre {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--yellow-color);
+    border-radius: 5px;
+    color: var(--dark-color);
+}
