@@ -3,17 +3,23 @@
 FasalInternProject
 This project is designed for an internship task, demonstrating user authentication and movie search functionality using the OMDB API.
 
-Project Structure
+
+
+## Project Structure
+
 This project is organized into three main files:
 
 index.html: Provides the structure for the web page, including components such as the login form, search form, and movie display area.
+
 main.css: Responsible for styling the web page to ensure it is visually appealing and user-friendly.
+
 script.js: Contains the application logic, handling user authentication, API requests, and dynamic content generation.
 
-How to Run the Project
+## How to Run the Project
+
 To run the project locally, follow these steps:
 
-Clone the Repository: Use Git to clone the project repository to your local machine.
+**Clone the Repository**: Use Git to clone the project repository to your local machine.
 
 ## git clone https://github.com/2100031103/Fasal.git
 ## cd MovieSearch
